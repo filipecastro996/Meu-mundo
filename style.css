@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Dancing Script;
+    font-size: 50px;
+   
+}
+body{
+    background-color: rgb(48, 48, 48);
+    color: beige;
+
+}
+    
+
+.teste1, .teste3, .teste5{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(237,0,214,1) 100%, rgba(0,8,42,1) 100%);
+}
+.teste2, .teste4, .teste6{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: rgb(255,0,201);
+    background: linear-gradient(90deg, rgba(255,0,201,1) 0%, rgba(79,84,255,1) 70%, rgba(0,8,42,1) 100%);
+    
+}
+
+.paragrafo1, .paragrafo3, .paragrafo5{
+    margin: 120px 0px 50px 100px;
+}
+.paragrafo2, .paragrafo4, .paragrafo6{
+    margin: 100px 100px 50px 0;
+    
+}
+
+img{
+    max-width: 25%;
+    margin: 40px;
+    border-radius: 20px;
+    
+
+}
+
+
+@media screen and (max-width: 768px ){
+    .teste1, .teste3, .teste5{
+        flex-direction: column;
+    }
+    .teste2, .teste4, .teste6{
+        flex-direction: column;
+    }
+    .paragrafo1, .paragrafo3, .paragrafo5{
+       margin: auto;
+       padding: 30px;
+       text-align: center;
+       
+    }
+    .paragrafo2, .paragrafo4, .paragrafo6{
+       margin: auto;
+       padding: 30px;
+       text-align: center;
+       
+    }
+
+
+    img{
+        max-width: 100%;
+    }
+}
